@@ -17,18 +17,18 @@ public class ArrayReversal  {
         for (int index = 0; index < symbols.length; index++) {
             symbols[index] = input.next().charAt(0);
         }
-       
-       char[] reversedSymbols = new char[size];
-       int reversedIndex = 0;
-       for (int index = symbols.length - 1; index >= 0; index--) {
-         reversedSymbols[reversedIndex] = symbols[index];
-         reversedIndex++;
-       }
 
-       String reversedString =Arrays.toString(reversedSymbols);
-       System.out.println("Reversed symbols: " + reversedString);
-       
-        
+        char[] reversedSymbols = new char[size];
+        int reversedIndex = 0;
+        for (int index = symbols.length - 1; index >= 0; index--) {
+            reversedSymbols[reversedIndex] = symbols[index];
+            reversedIndex++;
+        }
+
+        String reversedString =Arrays.toString(reversedSymbols);
+        System.out.println("Reversed symbols: " + reversedString);
+
+
     }
 
 }
